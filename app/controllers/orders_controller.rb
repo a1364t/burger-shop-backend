@@ -23,6 +23,11 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
 
+    # 1. You need to make the association between this order and the respective products.
+    # 2. Google it and use the << operator if appropriate. 
+    # 3. puts out the new @order afterwards to check if correct. 
+    
+    puts order_params
     respond_to do |format|
       if @order.save
         format.html { redirect_to order_url(@order), notice: "Order was successfully created." }
@@ -65,6 +70,6 @@ class OrdersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def order_params
-      params.require(:order).permit(:total_price, :customer_id, :product_ids)
+      params.require(:order).permit(:total_price, :customer_id, :product_ids => [])
     end
 end
