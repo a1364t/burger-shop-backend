@@ -4,12 +4,15 @@ class OrdersController < ApplicationController
   # GET /orders or /orders.json
   def index
     @orders = Order.all
-    render :json => @orders,:include => [:products]
+    respond_to do |format|
+      format.json {render :json => @orders,:include => [:products]}
+      format.html {}
+    end
   end
 
   # GET /orders/1 or /orders/1.json
   def show
-    render :json => @order,:include => [:products]
+    render :json => @order,:include => [:products]       
   end
 
   # GET /orders/new
