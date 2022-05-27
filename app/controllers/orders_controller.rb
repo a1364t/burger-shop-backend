@@ -4,10 +4,12 @@ class OrdersController < ApplicationController
   # GET /orders or /orders.json
   def index
     @orders = Order.all
+    render :json => @orders,:include => [:products]
   end
 
   # GET /orders/1 or /orders/1.json
   def show
+    render :json => @order,:include => [:products]
   end
 
   # GET /orders/new
@@ -23,10 +25,6 @@ class OrdersController < ApplicationController
   def create
     @order = Order.new(order_params)
 
-    # 1. You need to make the association between this order and the respective products.
-    # 2. Google it and use the << operator if appropriate. 
-    # 3. puts out the new @order afterwards to check if correct. 
-    
     puts order_params
     respond_to do |format|
       if @order.save
