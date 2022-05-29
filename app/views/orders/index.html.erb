@@ -13,9 +13,7 @@
   <tbody>
     <% @orders.each do |order| %>
     
-      <tr>
-        
-        <td><%= order.products.name %></td>
+      <tr>     
         <td><%= order.total_price %></td>
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
