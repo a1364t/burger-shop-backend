@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2022_05_25_230859) do
 
   create_table "products", force: :cascade do |t|
     t.text "name"
+    t.text "description"
     t.decimal "price"
     t.text "image"
     t.integer "quantity"
