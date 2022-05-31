@@ -1,24 +1,7 @@
-# README
+# Burger Shop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Burger shop is a full stack project using React for frontend and Ruby on Rails and postgreSQL for the backend.  
 
-Things you may want to cover:
+This Repo is associated with the backend to generate a REST API.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Backend has been deployed on heroku and live Demo of this project is available [here](https://burger-shop-final-project.netlify.app/)
