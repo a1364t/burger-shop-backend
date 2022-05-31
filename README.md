@@ -1,7 +1,7 @@
 # Burger Shop
 
-Burger shop is a full stack project using React for frontend and Ruby on Rails and postgreSQL for the backend.  
+Burger shop is a full-stack project using React for the frontend and Ruby on Rails and PostgreSQL for the backend.  
 
 This Repo is associated with the backend to generate a REST API.
 
-Backend has been deployed on heroku and live Demo of this project is available [here](https://burger-shop-final-project.netlify.app/)
+The backend has been deployed on Heroku and a live Demo of this project is available [here](https://burger-shop-final-project.netlify.app/)
